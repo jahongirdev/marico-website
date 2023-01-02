@@ -32,7 +32,18 @@
           <img src="img/logo.svg" alt="Site Logo">
         </a>
         <ul class="site-nav">
-          <li class="site-nav-item"><a class="site-nav-link" href="#">Use Cases</a></li>
+          <li class="site-nav-item nav-dropdown">
+            <button>Use Cases
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+              </svg>
+            </button>
+            <div class="dropdown-content">
+              <a rel="noopener" target="_blank" href="#">Item #1</a>
+              <a rel="noopener" target="_blank" href="#">Item #2</a>
+              <a rel="noopener" target="_blank" href="#">Item #3</a>
+            </div>
+          </li>
           <li class="site-nav-item"><a class="site-nav-link" href="#">About</a></li>
           <li class="site-nav-item"><a class="site-nav-link" href="#">Pricing</a></li>
           <li class="site-nav-item"><a class="site-nav-link" href="#">Blog</a></li>
@@ -41,9 +52,26 @@
           <a class="site-nav-reg-login" href="#">Login</a>
           <a class="site-nav-reg-signup" href="#">Sign Up</a>
         </div>
+        <div class="nav-mobile-menu">
+          <button onclick="openNav()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
 
 
   <script src="js/main.js"></script>

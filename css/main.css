@@ -444,6 +444,55 @@ ul {
 .site-header .site-navbar .site-nav .site-nav-item .site-nav-link:active {
   opacity: 0.8;
 }
+.site-header .site-navbar .site-nav .nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+.site-header .site-navbar .site-nav .nav-dropdown button {
+  background-color: transparent;
+  color: #707070;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+.site-header .site-navbar .site-nav .nav-dropdown button svg {
+  margin-left: 9px;
+}
+.site-header .site-navbar .site-nav .nav-dropdown button:hover, .site-header .site-navbar .site-nav .nav-dropdown button:focus {
+  color: #306ef7;
+}
+.site-header .site-navbar .site-nav .nav-dropdown button:active {
+  opacity: 0.8;
+}
+.site-header .site-navbar .site-nav .nav-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  padding-top: 10px;
+}
+.site-header .site-navbar .site-nav .nav-dropdown .dropdown-content a {
+  display: block;
+  color: #707070;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 5px 0px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+.site-header .site-navbar .site-nav .nav-dropdown .dropdown-content a:hover, .site-header .site-navbar .site-nav .nav-dropdown .dropdown-content a:focus {
+  color: #306ef7;
+}
+.site-header .site-navbar .site-nav .nav-dropdown .dropdown-content a:active {
+  opacity: 0.8;
+}
+.site-header .site-navbar .site-nav .nav-dropdown:hover .dropdown-content, .site-header .site-navbar .site-nav .nav-dropdown:focus .dropdown-content {
+  display: block;
+}
 .site-header .site-navbar .site-nav-reg .site-nav-reg-login {
   color: #707070;
   font-weight: 500;
@@ -476,6 +525,81 @@ ul {
 }
 .site-header .site-navbar .site-nav-reg .site-nav-reg-signup:active, .site-header .site-navbar .site-nav-reg .site-nav-reg-signup:focus {
   opacity: 0.8;
+}
+.site-header .site-navbar .nav-mobile-menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  .site-header .site-navbar .site-nav {
+    display: none;
+  }
+  .site-header .site-navbar .site-nav-reg {
+    display: none;
+  }
+  .site-header .site-navbar .nav-mobile-menu {
+    display: block;
+  }
+  .site-header .site-navbar .nav-mobile-menu button {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .site-header .site-navbar .nav-mobile-menu button:hover, .site-header .site-navbar .nav-mobile-menu button:focus {
+    color: #306ef7;
+  }
+  .site-header .site-navbar .nav-mobile-menu button:active {
+    opacity: 0.8;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

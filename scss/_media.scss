@@ -1,1 +1,56 @@
 // Responsive Media Queries
+@media screen and (max-width: 1100px) {
+}
+@media screen and (max-width: 1000px) {
+}
+@media screen and (max-width: 900px) {
+  .site-header {
+    .site-navbar {
+      .site-nav {
+        display: none;
+      }
+      .site-nav-reg {
+        display: none;
+      }
+      .nav-mobile-menu {
+        display: block;
+        button {
+          background-color: transparent;
+          color: $white;
+          border: none;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover,
+          &:focus {
+            color: #306ef7;
+          }
+          &:active {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 700px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 500px) {
+}
+@media screen and (max-height: 450px) {
+  .overlay {
+    a {
+      font-size: 20px;
+    }
+    .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+}
