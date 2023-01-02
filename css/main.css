@@ -841,6 +841,75 @@ ul {
   object-fit: contain;
 }
 
+.site-step2 {
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+.site-step2 .step2 .step2-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.site-step2 .step2 .step2-top span {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  color: #3d82f2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.site-step2 .step2 .step2-top h2 {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 82px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.site-step2 .step2 .step2-top p {
+  width: 780px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #707070;
+}
+.site-step2 .step2 .step2-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.site-step2 .step2 .step2-bottom .step2-item {
+  background-color: #0d0d0d;
+  width: 100%;
+  height: auto;
+  padding: 33px 45px;
+}
+.site-step2 .step2 .step2-bottom .step2-item:first-child {
+  margin-right: 23px;
+}
+.site-step2 .step2 .step2-bottom .step2-item .step2-item-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #0fc65c;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.site-step2 .step2 .step2-bottom .step2-item h3 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 80px;
+  color: #919191;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.site-step2 .step2 .step2-bottom .step2-item h3 span {
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 1100px) {
   .site-step .step .step-bottom {
     display: flex;
@@ -898,6 +967,20 @@ ul {
     font-size: 20px;
     line-height: 30px;
   }
+  .site-step2 .step2 .step2-top h2 {
+    font-size: 45px;
+    line-height: 72px;
+  }
+  .site-step2 .step2 .step2-top p {
+    width: auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .site-step2 .step2 .step2-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 800px) {
   .site-hero .hero .hero-buttons {
@@ -948,6 +1031,10 @@ ul {
   .site-step .step .step-bottom .step-bottom-left ul li {
     font-size: 13px;
     line-height: 13px;
+  }
+  .site-step2 .step2 .step2-top h2 {
+    font-size: 35px;
+    line-height: 62px;
   }
 }
 @media screen and (max-width: 500px) {
