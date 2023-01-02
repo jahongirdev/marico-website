@@ -1,0 +1,59 @@
+// Step
+.site-step {
+  margin-top: 20px;
+  margin-bottom: 150px;
+  .step {
+    .step-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      span {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 38px;
+        color: #3d82f2;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      h2 {
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 82px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      p {
+        width: 829px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 35px;
+        color: $gray;
+        margin-top: 0;
+        margin-bottom: 35px;
+      }
+      .step-btn {
+        border: 1px solid #707070;
+        border-radius: 7px;
+        padding: 23px 37px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: $gray;
+        white-space: nowrap;
+        transition: all 0.3s ease;
+        &:hover,
+        &:focus {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 0.6;
+        }
+      }
+    }
+    .step-bottom {
+      margin-top: 80px;
+    }
+  }
+}

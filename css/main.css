@@ -451,6 +451,7 @@ ul {
 .site-header .site-navbar .site-nav .nav-dropdown button {
   background-color: transparent;
   color: #707070;
+  border: none;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
@@ -555,18 +556,229 @@ ul {
   font-size: 36px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #306ef7;
+}
+.overlay a:active {
+  opacity: 0.8;
 }
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 25px;
+  right: 28px;
   font-size: 60px;
 }
 
+.site-hero {
+  margin: 120px 0px;
+}
+.site-hero .hero {
+  text-align: center;
+}
+.site-hero .hero .hero-title {
+  margin-bottom: 120px;
+}
+.site-hero .hero .hero-title h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.site-hero .hero .hero-title h1 b {
+  background: -webkit-linear-gradient(90deg, #fe6783 1.9%, #ffbf84 97.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.site-hero .hero .hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.site-hero .hero .hero-text p {
+  width: 550px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.site-hero .hero .hero-buttons {
+  margin-top: 70px;
+}
+.site-hero .hero .hero-buttons .hero-btn-first {
+  background-color: #326cf9;
+  color: #FFFFFF;
+  padding: 22px 73px;
+  border: 1px solid #326cf9;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  white-space: nowrap;
+}
+.site-hero .hero .hero-buttons .hero-btn-first:hover, .site-hero .hero .hero-buttons .hero-btn-first:focus {
+  background-color: transparent;
+  color: #326cf9;
+}
+.site-hero .hero .hero-buttons .hero-btn-first:active {
+  opacity: 0.8;
+}
+.site-hero .hero .hero-buttons .hero-btn-second {
+  background-color: transparent;
+  color: #707070;
+  padding: 22px 88px;
+  border: 1px solid #707070;
+  border-radius: 7px;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.site-hero .hero .hero-buttons .hero-btn-second:hover, .site-hero .hero .hero-buttons .hero-btn-second:focus {
+  opacity: 0.8;
+}
+.site-hero .hero .hero-buttons .hero-btn-second:active {
+  opacity: 0.6;
+}
+.site-hero .hero .hero-stat {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.site-hero .hero .hero-stat .hero-stat-dot {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #0fc65c;
+  box-shadow: 0px 0px 0px 8px rgba(15, 198, 91, 0.3019607843);
+}
+.site-hero .hero .hero-stat span {
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  color: #707070;
+}
+.site-hero .hero .hero-stat span b {
+  color: #FFFFFF;
+}
+
+.site-feedback {
+  margin: 150px 0px;
+}
+.site-feedback .feedback {
+  text-align: center;
+}
+.site-feedback .feedback h2 {
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 92px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.site-feedback .feedback .feedback-box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.site-feedback .feedback .feedback-box .feedback-item h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.site-feedback .feedback .feedback-box .feedback-item h3 img {
+  margin-right: 8px;
+}
+.site-feedback .feedback .feedback-box .feedback-item p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #707070;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-step {
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+.site-step .step .step-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.site-step .step .step-top span {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  color: #3d82f2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.site-step .step .step-top h2 {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 82px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.site-step .step .step-top p {
+  width: 829px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #707070;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.site-step .step .step-top .step-btn {
+  border: 1px solid #707070;
+  border-radius: 7px;
+  padding: 23px 37px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #707070;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+.site-step .step .step-top .step-btn:hover, .site-step .step .step-top .step-btn:focus {
+  opacity: 0.8;
+}
+.site-step .step .step-top .step-btn:active {
+  opacity: 0.6;
+}
+.site-step .step .step-bottom {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  .site-feedback .feedback .feedback-box {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 60px;
+  }
+}
 @media screen and (max-width: 900px) {
   .site-header .site-navbar .site-nav {
     display: none;
@@ -591,7 +803,57 @@ ul {
     opacity: 0.8;
   }
 }
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 800px) {
+  .site-hero .hero .hero-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-hero .hero .hero-buttons .hero-btn-second {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .site-hero .hero .hero-title h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .site-hero .hero .hero-text p {
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .site-hero .hero .hero-stat .hero-stat-dot {
+    width: 15px;
+    height: 15px;
+  }
+  .site-hero .hero .hero-stat span {
+    font-size: 19px;
+    line-height: 29px;
+  }
+  .site-feedback .feedback h2 {
+    font-size: 55px;
+    line-height: 82px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .site-hero .hero .hero-title h1 {
+    font-size: 45px;
+    line-height: 65px;
+  }
+  .site-hero .hero .hero-stat .hero-stat-dot {
+    width: 12px;
+    height: 12px;
+  }
+  .site-hero .hero .hero-stat span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .site-feedback .feedback h2 {
+    font-size: 45px;
+    line-height: 72px;
+  }
+}
+@media screen and (max-height: 460px) {
   .overlay a {
     font-size: 20px;
   }

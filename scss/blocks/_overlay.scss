@@ -23,16 +23,19 @@
     font-size: 36px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: all 0.3s ease;
     &:hover,
     &:focus {
-      color: #f1f1f1;
+      color: #306ef7;
+    }
+    &:active {
+      opacity: 0.8;
     }
   }
   .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: 25px;
+    right: 28px;
     font-size: 60px;
   }
 }

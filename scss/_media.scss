@@ -2,6 +2,16 @@
 @media screen and (max-width: 1100px) {
 }
 @media screen and (max-width: 1000px) {
+  .site-feedback {
+    .feedback {
+      .feedback-box {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 60px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 900px) {
   .site-header {
@@ -33,14 +43,90 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .site-hero {
+    .hero {
+      .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        .hero-btn-second {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 700px) {
 }
 @media screen and (max-width: 600px) {
+  .site-hero {
+    .hero {
+      .hero-title {
+        h1 {
+          font-size: 60px;
+          line-height: 80px;
+        }
+      }
+      .hero-text {
+        p {
+          font-size: 25px;
+          line-height: 50px;
+        }
+      }
+      .hero-stat {
+        .hero-stat-dot {
+          width: 15px;
+          height: 15px;
+        }
+        span {
+          font-size: 19px;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+  .site-feedback {
+    .feedback {
+      h2 {
+        font-size: 55px;
+        line-height: 82px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 500px) {
 }
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 460px) {
+  .site-hero {
+    .hero {
+      .hero-title {
+        h1 {
+          font-size: 45px;
+          line-height: 65px;
+        }
+      }
+      .hero-stat {
+        .hero-stat-dot {
+          width: 12px;
+          height: 12px;
+        }
+        span {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .site-feedback {
+    .feedback {
+      h2 {
+        font-size: 45px;
+        line-height: 72px;
+      }
+    }
+  }
+}
+@media screen and (max-height: 460px) {
   .overlay {
     a {
       font-size: 20px;

@@ -1,0 +1,44 @@
+// Feedback
+.site-feedback {
+  margin: 150px 0px;
+  .feedback {
+    text-align: center;
+    h2 {
+      font-weight: 600;
+      font-size: 65px;
+      line-height: 92px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .feedback-box {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+      .feedback-item {
+        h3 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          font-size: 33px;
+          line-height: 50px;
+          margin-top: 0;
+          margin-bottom: 10px;
+          img {
+            margin-right: 8px;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: $gray;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
