@@ -1,5 +1,30 @@
 // Responsive Media Queries
 @media screen and (max-width: 1100px) {
+  .site-step {
+    .step {
+      .step-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .step-bottom-left {
+          margin-bottom: 50px;
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .step-bottom-right {
+          img {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 1000px) {
   .site-feedback {
@@ -41,6 +66,17 @@
       }
     }
   }
+  .site-step {
+    .step {
+      .step-top {
+        p {
+          width: auto;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 800px) {
   .site-hero {
@@ -57,6 +93,16 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .site-step {
+    .step {
+      .step-top {
+        h2 {
+          font-size: 45px;
+          line-height: 72px;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 600px) {
   .site-hero {
@@ -93,8 +139,55 @@
       }
     }
   }
+  .site-step {
+    .step {
+      .step-top {
+        h2 {
+          font-size: 35px;
+          line-height: 62px;
+        }
+      }
+      .step-bottom {
+        .step-bottom-left {
+          h3 {
+            width: auto;
+            font-size: 50px;
+            line-height: 80px;
+          }
+          ul {
+            li {
+              font-size: 13px;
+              line-height: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 500px) {
+  .site-step {
+    .step {
+      .step-bottom {
+        .step-bottom-left {
+          ul {
+            li {
+              font-size: 11px;
+              line-height: 11px;
+            }
+          }
+          .step-bottom-left-buttons {
+            display: flex;
+            flex-direction: column;
+            .step-left-btn-second {
+              margin-top: 20px;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 460px) {
   .site-hero {

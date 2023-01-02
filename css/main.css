@@ -769,8 +769,99 @@ ul {
 }
 .site-step .step .step-bottom {
   margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.site-step .step .step-bottom .step-bottom-left span {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.site-step .step .step-bottom .step-bottom-left h3 {
+  width: 522px;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 92px;
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
+.site-step .step .step-bottom .step-bottom-left h3 b {
+  color: #3c82f4;
+}
+.site-step .step .step-bottom .step-bottom-left ul {
+  margin-bottom: 60px;
+}
+.site-step .step .step-bottom .step-bottom-left ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.site-step .step .step-bottom .step-bottom-left ul li img {
+  margin-right: 10px;
+}
+.site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons .step-left-btn-first {
+  background-color: #326cf9;
+  color: #FFFFFF;
+  border: 1px solid #326cf9;
+  border-radius: 7px;
+  padding: 17px 21px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons .step-left-btn-first:hover, .site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons .step-left-btn-first:focus {
+  background-color: transparent;
+  color: #326cf9;
+}
+.site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons .step-left-btn-first:active {
+  opacity: 0.8;
+}
+.site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons .step-left-btn-second {
+  background-color: #0e0e0e;
+  color: #FFFFFF;
+  border: 1px solid #707070;
+  border-radius: 7px;
+  padding: 17px 21px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  margin-left: 15px;
+}
+.site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons .step-left-btn-second:hover, .site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons .step-left-btn-second:focus {
+  background-color: transparent;
+}
+.site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons .step-left-btn-second:active {
+  opacity: 0.8;
+}
+.site-step .step .step-bottom .step-bottom-right img {
+  margin-left: 60px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
+@media screen and (max-width: 1100px) {
+  .site-step .step .step-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .site-step .step .step-bottom .step-bottom-left {
+    margin-bottom: 50px;
+  }
+  .site-step .step .step-bottom .step-bottom-left ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-step .step .step-bottom .step-bottom-right img {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 1000px) {
   .site-feedback .feedback .feedback-box {
     display: grid;
@@ -802,6 +893,11 @@ ul {
   .site-header .site-navbar .nav-mobile-menu button:active {
     opacity: 0.8;
   }
+  .site-step .step .step-top p {
+    width: auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 @media screen and (max-width: 800px) {
   .site-hero .hero .hero-buttons {
@@ -811,6 +907,12 @@ ul {
   .site-hero .hero .hero-buttons .hero-btn-second {
     margin-left: 0;
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .site-step .step .step-top h2 {
+    font-size: 45px;
+    line-height: 72px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -833,6 +935,33 @@ ul {
   .site-feedback .feedback h2 {
     font-size: 55px;
     line-height: 82px;
+  }
+  .site-step .step .step-top h2 {
+    font-size: 35px;
+    line-height: 62px;
+  }
+  .site-step .step .step-bottom .step-bottom-left h3 {
+    width: auto;
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .site-step .step .step-bottom .step-bottom-left ul li {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .site-step .step .step-bottom .step-bottom-left ul li {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-step .step .step-bottom .step-bottom-left .step-bottom-left-buttons .step-left-btn-second {
+    margin-top: 20px;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 460px) {
