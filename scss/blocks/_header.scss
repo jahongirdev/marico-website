@@ -1,0 +1,86 @@
+// Header
+.site-header {
+  margin: 40px 0px;
+  .site-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .site-navbar-logo {
+      transition: opacity 0.2s ease;
+      img {
+        width: 150px;
+        height: auto;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+    .site-nav {
+      display: flex;
+      align-items: center;
+      .site-nav-item {
+        margin-right: 38px;
+        &:last-child {
+          margin-right: 0;
+        }
+        .site-nav-link {
+          color: $gray;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          transition: color 0.2s ease, opacity 0.2s ease;
+          &:hover,
+          &:focus {
+            color: #3c82f4;
+          }
+          &:active {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .site-nav-reg {
+      .site-nav-reg-login {
+        color: $gray;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 24px;
+        transition: color 0.2s ease, opacity 0.2s ease;
+        &:hover,
+        &:focus {
+          color: #3c82f4;
+        }
+        &:active {
+          opacity: 0.8;
+        }
+      }
+      .site-nav-reg-signup {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        background-color: #306ef7;
+        color: $white;
+        padding: 11px 21px;
+        border: 1px solid #306ef7;
+        border-radius: 7px;
+        white-space: nowrap;
+        transition: background-color 0.3s ease, color 0.3s ease,
+          opacity 0.3s ease;
+        &:hover {
+          background-color: transparent;
+          color: #306ef7;
+        }
+        &:active,
+        &:focus {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
