@@ -539,9 +539,8 @@ ul {
   left: 0;
   top: 0;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .overlay .overlay-content {
   position: relative;
@@ -549,6 +548,9 @@ ul {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+}
+.overlay .overlay-content a {
+  margin: 15px 0px;
 }
 .overlay a {
   padding: 8px;
@@ -910,6 +912,41 @@ ul {
   color: #FFFFFF;
 }
 
+.site-experts {
+  margin: 100px 0px;
+}
+.site-experts .experts h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 82px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.site-experts .experts img {
+  margin-top: 50px;
+}
+
+.site-creators {
+  margin: 100px 0px;
+  background: url("../../img/cr-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.site-creators .creators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 140px;
+}
+.site-creators .creators p {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 80px;
+  text-align: center;
+}
+
 @media screen and (max-width: 1100px) {
   .site-step .step .step-bottom {
     display: flex;
@@ -980,6 +1017,9 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+  .site-creators .creators {
+    padding: 200px 10px;
   }
 }
 @media screen and (max-width: 800px) {

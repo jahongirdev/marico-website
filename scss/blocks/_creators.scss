@@ -1,0 +1,20 @@
+// Creators
+.site-creators {
+  margin: 100px 0px;
+  background: url("../../img/cr-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .creators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 140px;
+    p {
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 80px;
+      text-align: center;
+    }
+  }
+}
