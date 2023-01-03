@@ -1,0 +1,51 @@
+// Foooter
+.site-footer {
+  padding: 100px 0px;
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      .email {
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 40px;
+        color: $gray;
+        transition: all 0.2s ease;
+        &:hover,
+        &:focus {
+          color: #326df9;
+        }
+        &:active {
+          opacity: 0.8;
+        }
+      }
+    }
+    .footer-right {
+      ul {
+        @include list-unstyled;
+        display: flex;
+        gap: 40px;
+        li {
+          a {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: $gray;
+            transition: all 0.2s ease;
+            &:hover,
+            &:focus {
+              color: #326df9;
+            }
+            &:active {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
